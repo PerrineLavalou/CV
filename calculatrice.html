@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CV Perrine Lavalou</title>
+	<link rel="stylesheet" href="cv_style.css">
+	
+	
+<script type="text/javascript" src="script.js"></script>
+<script>
+    function calculer(){
+var c1 = parseInt(document.getElementById('Nb1').value);
+var c2 = parseInt(document.getElementById('Nb2').value);
+
+
+if(document.getElementById('a').checked){
+    var addition= c1 + c2;
+    document.getElementById('afficher').innerHTML=addition;
+}
+else if(document.getElementById('s').checked){
+    var soustraction= c1 - c2;
+    document.getElementById('afficher').innerHTML=soustraction;
+}
+else if(document.getElementById('d').checked){
+    var division= c1/c2;
+    document.getElementById('afficher').innerHTML=division;
+}
+else if(document.getElementById('m').checked){
+    var multiplication= c1 * c2;
+    document.getElementById('afficher').innerHTML=multiplication;
+}
+else{
+    document.getElementById('afficher').innerHTML="Merci de cocher ou remplir tout les champs manquants";
+}
+}
+</script>
+	
+	
+  </head>
+  
+  <header>
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-10">
+       <p ALIGN="CENTER">
+	   <h1 ALIGN = "CENTER"> CV Perrine Lavalou</h1>
+	   <h3 ALIGN ="CENTER"> PhD in Life Sciences </h3>
+	   </p>
+    </div>
+  </div>
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mon CV</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="page_accueil.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="expérience_professionnelle.html">Expérience professionnelle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="compétences.html">Compétences</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="formation.html">Formations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="centres_d_interets.html">Centre d'intéret</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="me_contacter.html">Me contacter</a>
+      </li>
+	   <li class="nav-item active">
+        <a class="nav-link" href="calculatrice.html">Calculatrice<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  </header>
+ 
+  
+  <body>
+   
+   
+   <p>
+   
+  <h4>Calculatrice</h4> 
+  <!-- voici une première version par manque de temps (je dois prendre la route) j'essaierai de mettre une version plus complète (avec les boutons) avant minuit si je peux me connecter-->
+<p>
+    NB 1:<input type="text" id="Nb1" name="Nb1"/>
+</p>
+<p>
+    + <input type="radio" id="a" name="r"/>
+    - <input type="radio" id="s" name="r"/>
+    / <input type="radio" id="d" name="r"/>
+    * <input type="radio" id="m" name="r"/>
+</p>
+<p>
+    NB 2:<input type="text" id="Nb2" name="Nb2"/>
+</p>
+<p>
+    <input type="submit" onclick="calculer()" id="valider" name="valider" value="valider"/>
+</p>
+<h5>Résultats</h5>
+<div id="afficher"></div>
+   
+
+ 
+   
+   
+   
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  
+  
+  <footer>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col-6">
+	<p ALIGN="CENTER">
+		<a href="mailto:perrine.lavalou@free.fr"> M'envoyer un email </a><br><br>
+		<a href="img/cv_fr.pdf" download="s"> Télécharger mon CV en français</a><br>
+		<a href="img/cv_en.pdf" download="s"> Download my resume in english</a>
+		</p>
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+
+  </footer>
+  
+  
+</html>
