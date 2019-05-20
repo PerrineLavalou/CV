@@ -115,10 +115,36 @@ else{
 </p>
 <h5>Résultats</h5>
 <div id="afficher"></div>
-   
 
+<h4>Deuxième Calculatrice</h4> 
+<script type="text/javascript">
+function displaynum(n1){
+    calcform.txt1.value=calcform.txt1.value+n1;
+}</script>
+
+<form name=calcform align="center" style="background:#06C3B9; height:200px; width:200px;">
+<input type="text" name="txt1" style="text-align: right"> <br><br>
+<input type="button" name="btn9" value="9" onclick="displaynum(btn9.value)">
+<input type="button" name="btn8" value="8"onclick="displaynum(btn8.value)">
+<input type="button" name="btn7" value="7"onclick="displaynum(btn7.value)">
+<input type="button" name="add" value="+"onclick="displaynum(add.value)"><br>
+<input type="button" name="btn6" value="6"onclick="displaynum(btn6.value)">
+<input type="button" name="btn5" value="5"onclick="displaynum(btn5.value)">
+<input type="button" name="btn4" value="4"onclick="displaynum(btn4.value)">
+<input type="button" name="sub" value="-"onclick="displaynum(sub.value)"><br>
+<input type="button" name="btn3" value="3"onclick="displaynum(btn3.value)">
+<input type="button" name="btn2" value="2"onclick="displaynum(btn2.value)">
+<input type="button" name="btn1" value="1"onclick="displaynum(btn1.value)">
+<input type="button" name="mul" value="*"onclick="displaynum(mul.value)"><br>
+<input type="button" name="dot" value="."onclick="displaynum(dot.value)">
+<input type="button" name="btn0" value="0"onclick="displaynum(btn0.value)">
+<input type="button" name="div" value="/"onclick="displaynum(div.value)">
+<input type="button" name="equ" value="="onclick="txt1.value=eval(txt1.value)">
+
+
+</form>
  
-   
+   <br><br><br>
    
    
    
